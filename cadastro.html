@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Sobre</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="cadastro.html" class="active">Contato</a></li>
+                </ul>
+                <div class="menu-icons">
+                    <button id="darkModeBtn">Modo Escuro</button>
+                    <button id="increaseFontBtn">Aumentar Fonte</button>
+                    <button id="toggleMenuBtn">☰</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo para nos enviar sua opinião ou dúvidas!</p>
+            <form>
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" placeholder="Digite seu nome completo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="exemplo@dominio.com" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="subject">Assunto:</label>
+                <select id="subject" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="dúvidas">Dúvidas</option>
+                    <option value="suporte">Suporte</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Quero receber novidades por e-mail</label>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Grupo de Web Coding. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

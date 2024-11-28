@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="galeria.html" class="active">Galeria</a></li>
+                <li><a href="cadastro.html">Contato</a></li>
+            </ul>
+            <div class="menu-icons">
+                <button id="darkModeBtn">Modo Escuro</button>
+                <button id="increaseFontBtn">Aumentar Fonte</button>
+                <button id="toggleMenuBtn">☰</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <h1>Galeria de Interesses</h1>
+            <div class="divider"></div>
+            
+            <h2>Anyta Queiroz</h2>
+            <br>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/fotos/volei.jpg" alt="vôlei">
+                    <h3>Vôlei</h3>
+                    <p>Minha paixão por esportes começou aqui. O vôlei me ensinou lições valiosas e trouxe pessoas especiais para a minha vida.</p>
+                    <button class="btn" onclick="mostrarMais('volei')">Saiba mais</button>
+                    <div id="volei" style="display: none;">
+                        <p>Sou levantadora do time da minha cidade. 
+                            A parte que eu mais gosto de jogar vôlei é viajar para outros estados com meu time!</p>
+                    </div>   
+                </div>
+                <div class="card">
+                    <img src="assets/fotos/leitura.jpg" alt="leitura">
+                    <h3>Leitura</h3>
+                    <p>Desde os 14 anos, os livros se tornaram meu refúgio, uma porta para novas realidades e aprendizado contínuo.</p>
+                    <button class="btn" onclick="mostrarMais('leitura')">Saiba mais</button>
+                    <div id="leitura" style="display: none;">
+                        <p>Não consigo me imaginar sem a leitura,
+                             qualquer tempo livre que tenho sempre começo um livro novo.</p>    
+                    </div>   
+                </div>
+                <div class="card">
+                    <img src="assets/fotos/marvel.jpg" alt="marvel">
+                    <h3>Marvel</h3>
+                    <p>Adoro como a Marvel une humor, ação e uma narrativa conectada de forma incrível 
+                        e personagens formidáveis que deixam a história ainda melhor.</p>
+                    <button class="btn" onclick="mostrarMais('marvel')">Saiba mais</button>
+                    <div id="marvel" style="display: none;">
+                        <p>Meu personagem favorito da marvel é o homem de ferro, amo o senso de humor dele.
+                            Fico super ansiosa pelos lançamentos dos filmes 
+                            e séries. Não vejo a hora de sair um novo filme no cinema!
+                        </p>
+                    </div>   
+                </div>
+            </div>
+            <br>
+             <h2>Maria Biatriz</h2>
+            <br>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/fotos/handebol.jpg" alt="handebol">
+                    <h3>Handebol</h3>
+                    <p>O handebol me traz conforto e alegria desde a infância, mesmo sendo um esporte de muito contato.</p>
+                    <button class="btn" onclick="mostrarMais('handebol')">Saiba mais</button>
+                    <div id="handebol" style="display: none;">
+                        <p>Minha jogadora favorita é a Bruna de paula, amo o estilo de jogo dela.
+                        </p>
+                    </div>   
+                </div>
+                <div class="card">
+                    <img src="assets/fotos/sport.jpg" alt="sport">
+                    <h3>Sport Clube Recife</h3>
+                    <p>Mesmo com altos e baixos, minha paixão pelo Sport Clube Recife é inabalável. Sempre Sport.</p>
+                    <button class="btn" onclick="mostrarMais('sport')">Saiba mais</button>
+                    <div id="sport" style="display: none;">
+                        <p> O sport Clube do Recife retorna elite do futebol brasileiro. SOMOS SÉRIE A!!!
+                        </p>
+                    </div>   
+                </div>
+                <div class="card">
+                    <img src="assets/fotos/homem.jpg" alt="homem-aranha">
+                    <h3>Homem-Aranha</h3>
+                    <p>Os filmes da saga Homem-Aranha me fascinam, especialmente as conexões entre universos.</p>
+                    <button class="btn" onclick="mostrarMais('homem-aranha')">Saiba mais</button>
+                    <div id="homem-aranha" style="display: none;">
+                        <p> Meu filme preferido é o "sem volta pra casa" porque nele mostra o homem-aranha de cada universo
+                             e trás de volta os vilões de cada filme também.
+                        </p>
+                    </div>   
+                </div>
+            </div>
+            <br>
+            <div class="interesse">
+                <h2>Lucas Rafael</h2>
+                <br>
+                <div class="cards">
+                    <div class="card">
+                        <img src="assets/fotos/viajar.jpg" alt="viajar">
+                        <h3>Viajar</h3>
+                        <p> Tenho paixão de conhecer novos lugares, novas culturas, 
+                            povos diferentes e aprender um pouco da historia de cada estado do Brasil.</p>
+                        <button class="btn" onclick="mostrarMais('viajar')">Saiba mais</button>
+                            <div id="viajar" style="display: none;">
+                                <p> Planejo viajar para Tailândia em um futuro breve.</p>    
+                            </div>   
+                    </div>  
+                    <div class="card">
+                        <img src="assets/fotos/atividades.jpg" alt="atividades">
+                        <h3>Atividades físicas</h3>
+                        <p>Desde novo, sempre tive preferencias e interesses em atividades físicas, 
+                            como: volei, basquete, natação, academia, calistenia, box e assim vai. </p>
+                            <button class="btn" onclick="mostrarMais('atividades')">Saiba mais</button>
+                            <div id="atividades" style="display: none;">
+                                <p>Começei na academia ano passado e com certeza foi uma das melhores escolhas que ja fiz na vida. Não consigo ficar sem.
+                                    </p>    
+                            </div>   
+                    </div>
+                    <div class="card">
+                        <img src="assets/fotos/games.jpg" alt="vídeo games">
+                        <h3>Vídeo games</h3>
+                        <p>Até onde me lembre,desde sempre fui apaixonado por jogos de rpg, fps, luta, corrida 
+                            e com certeza é meu hobby favorito
+                        </p>
+                        <button class="btn" onclick="mostrarMais('vídeo games')">Saiba mais</button>
+                            <div id="vídeo games" style="display: none;">
+                                <p> Meu jogo favorito é valorant.
+                                    </p>    
+                    </div>    
+                </div>
+            </div>          
+        </section>
+    </main>
+    <footer>
+        <p>&copy;  2024 Grupo de Web Coding. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
